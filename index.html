@@ -10,11 +10,54 @@
     <h1>Salary Calculator</h1>
   </header>
   <main>
+    <!--- * This application should have a form with five inputs that collect a new employee's 
+    *first name, 
+    last name, 
+    ID number, 
+    job title, 
+    annual salary*.-->
+    <!--You will need a submit button-->
+    <!--Do you need to have a blank table?-->
     <h2>Add Employee</h2>
+    <div>
+      <form>
+        <!---<label>First name:</label><br>-->
+        <input type="text" data-testid="firstNameInput" id="firstNameInput" name="fname" placeholder="First Name">
+        <!---<label>Last name:</label><br>  This is an example of how the label for the input would be done-->
+        <input type="text" data-testid="lastNameInput" id="lastNameInput" placeholder="Last Name">
+        
+        <input type="number" data-testid="idInput" id="idInput" placeholder="I.D. Number">
+        
+        <input type="text" data-testid="titleInput" id="titleInput" placeholder="Job Title">
+        
+        <input type="number" data-testid="annualSalaryInput" id="annualSalaryInput" placeholder="Annual Salary">
+       
+        <br><br>
+        
+        <input type="submit" id="submit" data-testid="submitButton" value="Submit">
+        <input type="reset" id="reset" value="Reset">
+      </form>
+    </div>
     <h2>Employees</h2>
-  </main>
+<br>
+<!--The table and header needs to go here - make sure you use a good ID for this...You will need to append <tr> and <td> to it. -->
+ <table id="salaryTable" style="width:100%">
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>I.D. Number</th>
+  <th>Job Title</th>
+  <th>Annual Salary</th>
+</tr>
+
+ </table> 
+ <br>
+
+</main>
   <footer>
     <p>Total Monthly</p>
+    <!--This total monthly needs to update with total sum-->
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
